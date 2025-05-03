@@ -38,7 +38,7 @@ export default function SignUpPage() {
         </div>
       </div>
       <div className="lg:p-8">
-        <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[450px] max-w-[550px]">
+        <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px] max-w-[350px] md:w-[450px] md:max-w-[450px]">
           <div className="flex flex-col space-y-2 text-center">
             <h1 className="text-2xl font-semibold tracking-tight">Create an account</h1>
             <p className="text-sm text-muted-foreground">Sign up to start your personalized mental wellness journey</p>

@@ -106,7 +106,7 @@ export function OnboardingQuiz() {
 
         {step === 2 && (
           <div className="space-y-4">
-            <h3 className="text-lg font-medium">What is your primary goal for using MindfulCampus?</h3>
+            <h3 className="text-lg font-medium">What is your primary goal for using NeuroVerse?</h3>
             <RadioGroup
               value={formData.primaryGoal}
               onValueChange={(value) => updateFormData("primaryGoal", value)}

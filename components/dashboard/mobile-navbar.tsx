@@ -7,7 +7,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import {
   Menu,
-  Smile,
+  NotebookText, // Changed from Smile
   Home,
   BookOpen,
   Users,
@@ -53,14 +53,14 @@ export function MobileNavbar() {
       <Link
         href={href}
         className={`flex items-center gap-3 px-3 py-2 rounded-md text-sm ${
-          active ? "bg-teal-100 text-teal-900 font-medium" : "hover:bg-muted"
+          active ? "bg-purple-100 text-purple-900 font-medium" : "hover:bg-muted" // Changed color
         }`}
         onClick={() => setOpen(false)}
       >
         <Icon className="h-4 w-4" />
         <span className="flex-1">{children}</span>
         {isNew && (
-          <Badge variant="outline" className="bg-teal-50 text-teal-700 text-xs">
+          <Badge variant="outline" className="bg-purple-50 text-purple-700 text-xs"> {/* Changed color */}
             New
           </Badge>
         )}
@@ -72,8 +72,8 @@ export function MobileNavbar() {
     <div className="sticky top-0 z-40 w-full bg-background border-b md:hidden">
       <div className="flex h-14 items-center px-4">
         <div className="flex items-center gap-2 mr-auto">
-          <Smile className="h-6 w-6 text-teal-500" />
-          <span className="font-bold">MindfulCampus</span>
+          <NotebookText className="h-6 w-6 text-purple-600" /> {/* Changed icon and color */}
+          <span className="font-bold text-purple-600">NeuroVerse</span> {/* Changed text and color */}
         </div>
 
         <Sheet open={open} onOpenChange={setOpen}>
@@ -86,8 +86,8 @@ export function MobileNavbar() {
           <SheetContent side="right" className="w-[80%] sm:w-[350px] pr-0">
             <div className="flex flex-col h-full">
               <div className="flex items-center gap-2 py-4">
-                <Smile className="h-6 w-6 text-teal-500" />
-                <span className="font-bold text-lg">MindfulCampus</span>
+                <NotebookText className="h-6 w-6 text-purple-600" /> {/* Changed icon and color */}
+                <span className="font-bold text-lg text-purple-600">NeuroVerse</span> {/* Changed text and color */}
               </div>
               <Separator />
               <div className="flex-1 overflow-auto py-4">
