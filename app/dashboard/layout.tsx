@@ -19,9 +19,9 @@ export default function DashboardLayout({
     <SidebarProvider defaultOpen={true}>
       <div className="flex min-h-screen flex-col">
         <MobileNavbar />
-        <div className="flex flex-1 overflow-hidden">
+        <div className="flex w-full overflow-hidden">
           <DashboardSidebar />
-          <main className="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8 w-full max-w-full">{children}</main>
+          <main suppressHydrationWarning className="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8">{children}</main>
         </div>
       </div>
     </SidebarProvider>

@@ -7,16 +7,21 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 const affirmations = [
-  "I am capable of handling whatever challenges come my way today.",
-  "I deserve to take care of my mental health and well-being.",
-  "My feelings are valid, and I allow myself to experience them fully.",
-  "I am growing and learning every day, even when progress feels slow.",
-  "I am worthy of love and support from others and from myself.",
-  "Today, I choose peace over worry and trust over fear.",
-  "I have the power to create positive change in my life.",
-  "I celebrate my strengths and accept my limitations with compassion.",
-  "I am resilient and can bounce back from setbacks.",
-  "My self-care is a priority, not a luxury.",
+  "I embrace this day with courage and an open heart, ready to face challenges with resilience and grace.",
+  "My well-being is a priority. I give myself permission to rest, recharge, and nurture my mind and body.",
+  "I acknowledge all my feelings without judgment, understanding they are temporary guides on my journey.",
+  "Every experience, positive or challenging, contributes to my growth. I am constantly evolving.",
+  "I am inherently worthy of love, respect, and kindness – both from others and, most importantly, from myself.",
+  "I release worries about the future and regrets about the past. I choose to be fully present in this moment.",
+  "I possess the inner strength and wisdom to navigate life's complexities and make choices aligned with my values.",
+  "I celebrate my unique talents and forgive my imperfections. I am whole and complete just as I am.",
+  "Setbacks are opportunities for learning and redirection. I trust my ability to bounce back stronger.",
+  "Investing in my self-care nourishes my spirit and allows me to show up more fully in the world.",
+  "I attract positive energy by radiating kindness, compassion, and gratitude.",
+  "I am capable of creating a life filled with joy, purpose, and meaningful connections.",
+  "I trust the timing of my life and have patience with my own unfolding process.",
+  "Today, I will focus on progress, not perfection, and celebrate small victories along the way.",
+  "My voice matters, and I express my needs and boundaries with confidence and clarity."
 ]
 
 export function DailyAffirmation() {

@@ -18,11 +18,18 @@ import {
   LifeBuoy,
   MessageSquare,
   LogOut,
+  Gamepad2,
+  BookMarked,
+  Library,
+  ShoppingBag,
+  ClipboardList,
+  MessageCircleQuestion,
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Separator } from "@/components/ui/separator"
+import { Badge } from "@/components/ui/badge"
 
 export function MobileNavbar() {
   const [open, setOpen] = useState(false)
@@ -34,7 +41,13 @@ export function MobileNavbar() {
     href,
     icon: Icon,
     children,
-  }: { href: string; icon: React.ElementType; children: React.ReactNode }) => {
+    isNew,
+  }: {
+    href: string
+    icon: React.ElementType
+    children: React.ReactNode
+    isNew?: boolean
+  }) => {
     const active = isActive(href)
     return (
       <Link
@@ -45,7 +58,12 @@ export function MobileNavbar() {
         onClick={() => setOpen(false)}
       >
         <Icon className="h-4 w-4" />
-        {children}
+        <span className="flex-1">{children}</span>
+        {isNew && (
+          <Badge variant="outline" className="bg-teal-50 text-teal-700 text-xs">
+            New
+          </Badge>
+        )}
       </Link>
     )
   }
@@ -55,7 +73,7 @@ export function MobileNavbar() {
       <div className="flex h-14 items-center px-4">
         <div className="flex items-center gap-2 mr-auto">
           <Smile className="h-6 w-6 text-teal-500" />
-          <span className="font-bold">NeuroVerse</span>
+          <span className="font-bold">MindfulCampus</span>
         </div>
 
         <Sheet open={open} onOpenChange={setOpen}>
@@ -69,7 +87,7 @@ export function MobileNavbar() {
             <div className="flex flex-col h-full">
               <div className="flex items-center gap-2 py-4">
                 <Smile className="h-6 w-6 text-teal-500" />
-                <span className="font-bold text-lg">NeuroVerse</span>
+                <span className="font-bold text-lg">MindfulCampus</span>
               </div>
               <Separator />
               <div className="flex-1 overflow-auto py-4">
@@ -87,6 +105,30 @@ export function MobileNavbar() {
                     </NavItem>
                     <NavItem href="/dashboard/solo-play" icon={User}>
                       Solo Play
+                    </NavItem>
+                  </div>
+
+                  <Separator />
+
+                  <div className="space-y-1">
+                    <h3 className="text-xs uppercase text-muted-foreground font-medium px-3">New Features</h3>
+                    <NavItem href="/dashboard/games" icon={Gamepad2} isNew>
+                      Wellness Games
+                    </NavItem>
+                    <NavItem href="/dashboard/planner" icon={BookMarked} isNew>
+                      Academic Planner
+                    </NavItem>
+                    <NavItem href="/dashboard/resources" icon={Library}>
+                      Resource Hub
+                    </NavItem>
+                    <NavItem href="/dashboard/marketplace" icon={ShoppingBag} isNew>
+                      Marketplace
+                    </NavItem>
+                    <NavItem href="/dashboard/chatbot" icon={MessageCircleQuestion} isNew>
+                      AI Therapist
+                    </NavItem>
+                    <NavItem href="/dashboard/feedback" icon={ClipboardList}>
+                      Feedback
                     </NavItem>
                   </div>
 

@@ -22,7 +22,7 @@ export default function HomepagePage() {
         <p className="text-muted-foreground">Explore tools and activities to support your mental health journey</p>
       </div>
 
-      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 w-full">
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 w-full">
         <DailyAffirmation />
         <BreathingExercise />
       </div>

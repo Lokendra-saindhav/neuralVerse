@@ -8,25 +8,25 @@ import { Separator } from "@/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export const metadata: Metadata = {
-  title: "About Us | MindfulCampus",
-  description: "Learn about our mission and the team behind MindfulCampus",
+  title: "About Us | NeuroVerse",
+  description: "Learn about our mission and the team behind NeuroVerse",
 }
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-2">
-        <h1 className="text-3xl font-bold tracking-tight">About MindfulCampus</h1>
+        <h1 className="text-3xl font-bold tracking-tight">About NeuroVerse</h1>
         <p className="text-muted-foreground">
           Learn about our mission and the team behind the app
         </p>
       </div>
 
       <div className="relative w-full h-64 rounded-lg overflow-hidden">
-        <Image 
-          src="/placeholder.svg?height=1080&width=1920" 
-          alt="Team of mental health professionals" 
-          fill 
+        <Image
+          src="/placeholder.svg?height=1080&width=1920"
+          alt="Team of mental health professionals"
+          fill
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-teal-900/70 to-transparent flex items-center">
@@ -48,23 +48,23 @@ export default function AboutPage() {
         <TabsContent value="about" className="space-y-4 pt-4">
           <Card>
             <CardHeader>
-              <CardTitle>The MindfulCampus Story</CardTitle>
+              <CardTitle>The NeuroVerse Story</CardTitle>
               <CardDescription>
                 How we started and where we're going
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <p>
-                MindfulCampus was founded in 2023 by a team of mental health professionals, educators, and technology experts who recognized the growing mental health challenges faced by students in higher education.
+                NeuroVerse was founded in 2023 by a team of mental health professionals, educators, and technology experts who recognized the growing mental health challenges faced by students in higher education.
               </p>
               <p>
                 Our journey began when we observed that traditional mental health resources on campus were often overwhelmed and unable to meet the increasing demand for support. We saw an opportunity to leverage technology to create an accessible, engaging platform that could complement existing services and reach students where they are.
               </p>
               <p>
-                What sets MindfulCampus apart is our commitment to both evidence-based practices and innovative approaches. We combine the science of mental wellness with the power of community and technology to create a comprehensive support system for students.
+                What sets NeuroVerse apart is our commitment to both evidence-based practices and innovative approaches. We combine the science of mental wellness with the power of community and technology to create a comprehensive support system for students.
               </p>
               <p>
-                Today, MindfulCampus serves thousands of students across multiple universities, providing them with tools to manage stress, anxiety, and other mental health challenges. Our vision is to create a world where every student has access to the mental health support they need to thrive academically and personally.
+                Today, NeuroVerse serves thousands of students across multiple universities, providing them with tools to manage stress, anxiety, and other mental health challenges. Our vision is to create a world where every student has access to the mental health support they need to thrive academically and personally.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                 <div className="flex flex-col items-center text-center p-4 rounded-lg border">
@@ -136,18 +136,18 @@ export default function AboutPage() {
             <CardHeader>
               <CardTitle>Leadership Team</CardTitle>
               <CardDescription>
-                Meet the people behind MindfulCampus
+                Meet the people behind NeuroVerse
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
-                    <Image 
-                      src="/placeholder.svg?text=DR" 
-                      alt="Dr. Rebecca Chen" 
-                      width={128} 
-                      height={128} 
+                    <Image
+                      src="/placeholder.svg?text=DR"
+                      alt="Dr. Rebecca Chen"
+                      width={128}
+                      height={128}
                       className="object-cover"
                     />
                   </div>
@@ -159,11 +159,11 @@ export default function AboutPage() {
                 </div>
                 <div className="flex flex-col items-center text-center">
                   <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
-                    <Image 
-                      src="/placeholder.svg?text=MJ" 
-                      alt="Michael Johnson" 
-                      width={128} 
-                      height={128} 
+                    <Image
+                      src="/placeholder.svg?text=MJ"
+                      alt="Michael Johnson"
+                      width={128}
+                      height={128}
                       className="object-cover"
                     />
                   </div>
@@ -175,11 +175,11 @@ export default function AboutPage() {
                 </div>
                 <div className="flex flex-col items-center text-center">
                   <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
-                    <Image 
-                      src="/placeholder.svg?text=SP" 
-                      alt="Dr. Sarah Patel" 
-                      width={128} 
-                      height={128} 
+                    <Image
+                      src="/placeholder.svg?text=SP"
+                      alt="Dr. Sarah Patel"
+                      width={128}
+                      height={128}
                       className="object-cover"
                     />
                   </div>
@@ -203,11 +203,11 @@ export default function AboutPage() {
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 w-full">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-24 h-24 rounded-full overflow-hidden mb-3">
-                    <Image 
-                      src="/placeholder.svg?text=JW" 
-                      alt="Dr. James Wilson" 
-                      width={96} 
-                      height={96} 
+                    <Image
+                      src="/placeholder.svg?text=JW"
+                      alt="Dr. James Wilson"
+                      width={96}
+                      height={96}
                       className="object-cover"
                     />
                   </div>
@@ -216,11 +216,11 @@ export default function AboutPage() {
                 </div>
                 <div className="flex flex-col items-center text-center">
                   <div className="w-24 h-24 rounded-full overflow-hidden mb-3">
-                    <Image 
-                      src="/placeholder.svg?text=EL" 
-                      alt="Elena Lopez" 
-                      width={96} 
-                      height={96} 
+                    <Image
+                      src="/placeholder.svg?text=EL"
+                      alt="Elena Lopez"
+                      width={96}
+                      height={96}
                       className="object-cover"
                     />
                   </div>
@@ -229,11 +229,11 @@ export default function AboutPage() {
                 </div>
                 <div className="flex flex-col items-center text-center">
                   <div className="w-24 h-24 rounded-full overflow-hidden mb-3">
-                    <Image 
-                      src="/placeholder.svg?text=DT" 
-                      alt="Dr. David Thompson" 
-                      width={96} 
-                      height={96} 
+                    <Image
+                      src="/placeholder.svg?text=DT"
+                      alt="Dr. David Thompson"
+                      width={96}
+                      height={96}
                       className="object-cover"
                     />
                   </div>
@@ -242,11 +242,11 @@ export default function AboutPage() {
                 </div>
                 <div className="flex flex-col items-center text-center">
                   <div className="w-24 h-24 rounded-full overflow-hidden mb-3">
-                    <Image 
-                      src="/placeholder.svg?text=AK" 
-                      alt="Aisha Khan" 
-                      width={96} 
-                      height={96} 
+                    <Image
+                      src="/placeholder.svg?text=AK"
+                      alt="Aisha Khan"
+                      width={96}
+                      height={96}
                       className="object-cover"
                     />
                   </div>
@@ -273,7 +273,7 @@ export default function AboutPage() {
                     <div>
                       <h3 className="text-base font-medium">Email Us</h3>
                       <p className="text-sm text-muted-foreground">
-                        support@mindfulcampus.com
+                        support@neuroverse.com
                       </p>
                     </div>
                   </div>
@@ -344,9 +344,9 @@ export default function AboutPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <h3 className="text-base font-medium">Is MindfulCampus a replacement for therapy?</h3>
+                <h3 className="text-base font-medium">Is NeuroVerse a replacement for therapy?</h3>
                 <p className="text-sm text-muted-foreground">
-                  No, MindfulCampus is designed to complement professional mental health services, not replace them. We provide tools and resources for everyday mental wellness, but recommend seeking professional help for clinical concerns.
+                  No, NeuroVerse is designed to complement professional mental health services, not replace them. We provide tools and resources for everyday mental wellness, but recommend seeking professional help for clinical concerns.
                 </p>
               </div>
               <Separator />
@@ -358,23 +358,23 @@ export default function AboutPage() {
               </div>
               <Separator />
               <div className="space-y-2">
-                <h3 className="text-base font-medium">Can my university partner with MindfulCampus?</h3>
+                <h3 className="text-base font-medium">Can my university partner with NeuroVerse?</h3>
                 <p className="text-sm text-muted-foreground">
-                  Yes! We work with universities to provide customized mental health support for their students. Please contact our partnerships team at partnerships@mindfulcampus.com for more information.
+                  Yes! We work with universities to provide customized mental health support for their students. Please contact our partnerships team at partnerships@neuroverse.com for more information.
                 </p>
               </div>
               <Separator />
               <div className="space-y-2">
                 <h3 className="text-base font-medium">How can I provide feedback or suggestions?</h3>
                 <p className="text-sm text-muted-foreground">
-                  We welcome your feedback! Please use the contact form above or email us at feedback@mindfulcampus.com. Your suggestions help us improve the platform for everyone.
+                  We welcome your feedback! Please use the contact form above or email us at feedback@neuroverse.com. Your suggestions help us improve the platform for everyone.
                 </p>
               </div>
               <Separator />
               <div className="space-y-2">
                 <h3 className="text-base font-medium">Is my information confidential?</h3>
                 <p className="text-sm text-muted-foreground">
-                  Yes, all information you provide is kept strictly confidential and is only used to improve your experience on MindfulCampus. For more details, see our privacy policy.
+                  Yes, all information you provide is kept strictly confidential and is only used to improve your experience on NeuroVerse. For more details, see our privacy policy.
                 </p>
               </div>
             </CardContent>
